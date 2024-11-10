@@ -75,10 +75,24 @@ The calculated *Semantic Diversity* will be displayed in the terminal and saved 
 ## Citation
 
 ```
-@article{li2024scalingfilter,
-  title={ScalingFilter: Assessing Data Quality through Inverse Utilization of Scaling Laws},
-  author={Li, Ruihang and Wei, Yixuan and Zhang, Miaosen and Yu, Nenghai and Hu, Han and Peng, Houwen},
-  journal={arXiv preprint arXiv:2408.08310},
-  year={2024}
+@inproceedings{li-etal-2024-scalingfilter,
+    title = "{S}caling{F}ilter: Assessing Data Quality through Inverse Utilization of Scaling Laws",
+    author = "Li, Ruihang  and
+      Wei, Yixuan  and
+      Zhang, Miaosen  and
+      Yu, Nenghai  and
+      Hu, Han  and
+      Peng, Houwen",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.187",
+    pages = "3209--3222",
+    abstract = "High-quality data is crucial for the pre-training performance of large language models. Unfortunately, existing quality filtering methods rely on a known high-quality dataset as reference, which can introduce potential bias and compromise diversity. In this paper, we propose ScalingFilter, a novel approach that evaluates text quality based on the perplexity difference between two language models trained on the same data, thereby eliminating the influence of the reference dataset in the filtering process. An theoretical analysis shows that ScalingFilter is equivalent to an inverse utilization of scaling laws. Through training models with 1.3B parameters on the same data source processed by various quality filters, we find ScalingFilter can improve zero-shot performance of pre-trained models in downstream tasks. To assess the bias introduced by quality filtering, we introduce semantic diversity, a metric of utilizing text embedding models for semantic representations. Extensive experiments reveal that semantic diversity is a reliable indicator of dataset diversity, and ScalingFilter achieves an optimal balance between downstream performance and semantic diversity.",
 }
 ```
